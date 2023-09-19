@@ -41,8 +41,8 @@ class HeaderMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         HeaderWidget(),
         SearchBox(),
       ],
@@ -65,11 +65,13 @@ class ToolInfo extends StatelessWidget {
         backgroundColor: const Color(0xff212121),
         elevation: 0,
       ),
-      body: Container(
-          child: Column(
-            children: [
-              const SearchBox(),
-              Expanded(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SearchBox(),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: SingleChildScrollView(
                 child: Column(
                   children: [
                     const Image(
@@ -99,15 +101,17 @@ class ToolInfo extends StatelessWidget {
                     ),
                     Container(
                       child: const Text(
-                          "I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions..."),
+                        "I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...",
+                        style: TextStyle(height: 2),
+                      ),
                     ),
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-      
+      ),
     );
   }
 }
@@ -200,7 +204,7 @@ class ListItem extends StatelessWidget {
     return Row(
       children: [
         Padding(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
           child: Column(
             children: [
               SizedBox(
@@ -247,9 +251,7 @@ class ListItem extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0, 10, 15, 0),
               child: const Text(
                 "I am ChatGPT, an AI language model developed by OpenAI. With a vast knowledge base and advanced natural language processing capabilities, I can assist you in various tasks, answer questions...",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
+                style: TextStyle(color: Colors.white, height: 1.5),
               ),
             ),
           ],

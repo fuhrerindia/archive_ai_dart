@@ -1,4 +1,4 @@
-package com.example.archiveai
+package com.paurush_sinha_d.archiveai
 
 import io.flutter.embedding.android.FlutterActivity
 

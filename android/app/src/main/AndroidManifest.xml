@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.archiveai">
+    package="com.paurush_sinha_d.archiveai">
    <application
         android:label="archiveai"
         android:name="${applicationName}"

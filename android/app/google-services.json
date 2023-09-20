@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "130668148285",
+    "project_id": "archive-ai-d4b19",
+    "storage_bucket": "archive-ai-d4b19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130668148285:android:93df2cd246c51aec035c54",
+        "android_client_info": {
+          "package_name": "com.paurush_sinha_d.archiveai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130668148285-r1lkicf5obdm15tijnp120u0rtsfsbeg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYcmMxaAcc4A7jI5CUXcPR2Jp6gz7B9H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130668148285-r1lkicf5obdm15tijnp120u0rtsfsbeg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
